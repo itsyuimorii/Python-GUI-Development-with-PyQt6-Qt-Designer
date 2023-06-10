@@ -2,8 +2,6 @@ from PyQt6.QtWidgets import QApplication, QWidget, QLabel
 from PyQt6.QtGui import QIcon, QFont, QPixmap, QMovie
 import sys
 
-
-
 class Window(QWidget):
     def __init__(self):
         super().__init__()
@@ -13,30 +11,30 @@ class Window(QWidget):
         self.setWindowIcon(QIcon('images/python.png'))
 
 
-
+ 
         '''
         label = QLabel("Python GUI Development", self)
         #label.setText("New Text is Here")
         label.move(100,100)
         label.setFont(QFont("Sanserif", 15))
         label.setStyleSheet('color:red')
-
+        
         #label.setText(str(12))
         label.setNum(15)
         label.clear()
         '''
 
-        '''
+         
         label = QLabel(self)
         pixmap = QPixmap('images/python.png')
         label.setPixmap(pixmap)
-        '''
+        
 
-        label = QLabel(self)
-        movie = QMovie('images/sky.gif')
-        movie.setSpeed(500)
-        label.setMovie(movie)
-        movie.start()
+        # label = QLabel(self)
+        # movie = QMovie('images/sky.gif')
+        # movie.setSpeed(500)
+        # label.setMovie(movie)
+        # movie.start()
 
 
 

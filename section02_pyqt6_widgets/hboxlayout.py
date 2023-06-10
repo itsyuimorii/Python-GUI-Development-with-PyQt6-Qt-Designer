@@ -30,12 +30,6 @@ class Window(QWidget):
         self.setLayout(hbox)
 
 
-
-
-
-
-
-
 app = QApplication(sys.argv)
 window = Window()
 window.show()
